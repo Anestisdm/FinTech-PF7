@@ -13,12 +13,12 @@ import java.util.Map;
 @Service
 @AllArgsConstructor
 @Slf4j
-public class FeederService {
+public class walletService {
 
     private RabbitTemplate rabbitTemplate;
 
-    public void feederRequest(Map<String, Object> payload) {
-        rabbitTemplate.convertAndSend(AMQPConfiguration.exchangeName, AMQPConfiguration.routingKey, validate(payload));
+    public void walletRequest(Map<String, Object> payload) {
+        rabbitTemplate.convertAndSend(AMQPConfiguration.exchangeName, AMQPConfiguration.walletRoutingKey, validate(payload));
         log.info("A payload has been sent to the queue.");
     }
 
@@ -56,17 +56,9 @@ public class FeederService {
         if(Strings.isNullOrEmpty((String) payload.get("paymentCurrency"))) {
             payload.put("paymentCurrency", "");
         }
-        //feeAmount (string)
-        if(Strings.isNullOrEmpty((String) payload.get("feeAmount"))) {
-            payload.put("feeAmount", 0);
-        }
-        //feeCurrency (string)
-        if(Strings.isNullOrEmpty((String) payload.get("feeCurrency"))) {
-            payload.put("feeCurrency", "");
-        }
         //channel (string)
         if(Strings.isNullOrEmpty((String) payload.get("channel"))) {
-            payload.put("channel", "payment");
+            payload.put("channel", "wallet");
 
         }
         return payload;

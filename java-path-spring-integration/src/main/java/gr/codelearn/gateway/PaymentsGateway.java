@@ -9,4 +9,7 @@ import java.util.Map;
 public interface PaymentsGateway {
     @Gateway(requestChannel = "accountsLookupChannel")
     void initiatePayment(Map<String, Object> payload);
+    @Gateway(requestChannel = "calculateFeeChannel")
+    void initiateWalletPayment(Map<String, Object> payload);
+
 }

@@ -14,6 +14,7 @@ import java.util.Map;
 public class RabbitMQListener {
 
     private static final String queueName = "payment.queue";
+    private static final String walletQueue = "wallet.queue";
 
     private PaymentsGateway paymentsGateway;
 
@@ -21,5 +22,10 @@ public class RabbitMQListener {
     public void consumePayment(Map<String, Object> payload) {
         log.info("A payment payload has been received.");
         paymentsGateway.initiatePayment(payload);
+    }
+    @RabbitListener(queues = walletQueue)
+    public void consumeWalletPayment(Map<String, Object> payload) {
+        log.info("A wallet payment payload has been received.");
+        paymentsGateway.initiateWalletPayment(payload);
     }
 }
