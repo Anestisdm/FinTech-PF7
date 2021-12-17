@@ -18,6 +18,7 @@ import java.util.Map;
 @EnableIntegration
 @AllArgsConstructor
 public class CalculateFeeFlow {
+
     private CalculateFeeService calculateFeeService;
 
     @Bean

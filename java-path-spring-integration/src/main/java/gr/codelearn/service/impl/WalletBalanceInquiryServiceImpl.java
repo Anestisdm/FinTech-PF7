@@ -30,7 +30,7 @@ public class WalletBalanceInquiryServiceImpl implements WalletBalanceInquiryServ
 
         String paymentAmountStr = (String) payload.get("paymentAmount");
         BigDecimal paymentAmount = new BigDecimal(paymentAmountStr);
-        String feeAmountStr = (String) payload.get("feeAmount");
+        String feeAmountStr = payload.get("feeAmount").toString();
         BigDecimal feeAmount = new BigDecimal(feeAmountStr);
 
         BigDecimal completeAmount = paymentAmount.add(feeAmount);

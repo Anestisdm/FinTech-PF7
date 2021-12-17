@@ -22,7 +22,7 @@ public class WalletPostingServiceImpl implements WalletPostingService {
         log.info("Performing transaction.");
 
         // preparing fee
-        String feeAmountStr = (String) payload.get("feeAmount");
+        String feeAmountStr = payload.get("feeAmount").toString();
         BigDecimal feeAmount = new BigDecimal(feeAmountStr);
 
         // 1) Subtract fee from debtor
@@ -69,6 +69,7 @@ public class WalletPostingServiceImpl implements WalletPostingService {
         log.info("Subtracting fee from creditor.");
         BigDecimal balanceAfterFeeSubtraction2 = creditor.getBalance().subtract(feeAmount);
         creditor.setBalance(balanceAfterFeeSubtraction2);
+        accountService.save(creditor);
 
         // 6) Add fee from creditor to Bank
         log.info("Adding fee from creditor to bank.");
