@@ -1,15 +1,15 @@
 # FinTech---PF7
 
 1 - What is this?
-        * This is a simplified technical system that accepts payment requests, directly to an account or through digital e-wallet. The requests are placed in a queue, different for each payment method, where they are dispatched by the appropriate services to validate
+        This is a simplified technical system that accepts payment requests, directly to an account or through digital e-wallet. The requests are placed in a queue, different for each payment method, where they are dispatched by the appropriate services to validate
  	the request and execute the transaction once all details have been confirmed as valid.
 
 2 - Who can use this system?
-        * This system can be used by people that have an account on the Advanced Bank Central, or ABC. All transactions, either payments on account or payments through digital e-wallet, can be only between accounts of ABC.
+        This system can be used by people that have an account on the Advanced Bank Central, or ABC. All transactions, either payments on account or payments through digital e-wallet, can be only between accounts of ABC.
 
 3a - How it works?
-        * For achieving a payment with his system the user should have an IDE that can run Java files, the software "Docker" with "RabbitMq" and the software "Postman".
-        * While Docker is running, the user needs to run the "Edge.java" file in the IDE. Then, he should send a request with post method through "Postman", mentioning all the details needed for the transaction. After the request is sent, the user has to run the file "Integration.java". 
+        For achieving a payment with his system the user should have an IDE that can run Java files, the software "Docker" with "RabbitMq" and the software "Postman".
+        While Docker is running, the user needs to run the "Edge.java" file in the IDE. Then, he should send a request with post method through "Postman", mentioning all the details needed for the transaction. After the request is sent, the user has to run the file "Integration.java". 
 	Then, the system checks the validation and, if everything is valid, the transaction is completed.
 	
 3b - Workstation specifications
@@ -20,7 +20,7 @@
 	*4 Core CPU
     
 4 - What details does the user need to provide?
-        * The details must be written in a json format. For a payment to an account the user needs to give the following information:
+        The details must be written in a json format. For a payment to an account the user needs to give the following information:
         "cid": ,
         "creditorName": ,
         "creditorIBAN": ,
@@ -43,4 +43,4 @@
         "paymentCurrency": "EUR",
 
 5 - User support
-        * For help or referring an issue, you can contact with the development team at these e-mails: adimou@athtech.gr and pvavalos@athtech.gr.
+        For help or referring an issue, you can contact with the development team at these e-mails: adimou@athtech.gr and pvavalos@athtech.gr.
