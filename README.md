@@ -22,6 +22,7 @@
 4 - What details does the user need to provide?
 
         The details must be written in a json format. For a payment to an account the user needs to give the following information:
+	
         "cid": ,
         "creditorName": ,
         "creditorIBAN": ,
@@ -34,6 +35,7 @@
         "feeCurrency": "EUR"
 
         For a payment through a digital e-wallet the user must provide the following:
+	
         "cid": ,
         "creditorName": ,
         "creditorIBAN": ,
