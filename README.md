@@ -43,5 +43,5 @@
         "valuerDate": ,
         "paymentCurrency": "EUR",
 
-5 - User support
+5 - User support?
 	For help or referring an issue, you can contact with the development team at these e-mails: adimou@athtech.gr and pvavalos@athtech.gr.
