@@ -1,4 +1,4 @@
-# FinTech---PF7
+# Digital Wallet
 
 1 - What is this?
         This is a simplified technical system that accepts payment requests, directly to an account or through digital e-wallet. The requests are placed in a queue, different for each payment method, where they are dispatched by the appropriate services to validate
@@ -14,14 +14,15 @@
 	
 3b - Workstation specifications
 
-	Windows 10 or Linux or MacOS, 64 bit
-	RAM, 8GB required, 16GB preferable
-	128 GB Storage (SSD would be preferrable)
-	4 Core CPU
+- Windows 10 or Linux or MacOS, 64 bit
+- RAM, 8GB required, 16GB preferable
+- 128 GB Storage (SSD would be preferrable)
+- 4 Core CPU
     
 4 - What details does the user need to provide?
 
-        The details must be written in a json format. For a payment to an account the user needs to give the following information:
+The details must be written in a json format. For a payment to an account the user needs to give the following information:
+
         "cid": ,
         "creditorName": ,
         "creditorIBAN": ,
@@ -33,7 +34,8 @@
         "feeAmount": ,
         "feeCurrency": "EUR"
 
-        For a payment through a digital e-wallet the user must provide the following:
+For a payment through a digital e-wallet the user must provide the following:
+
         "cid": ,
         "creditorName": ,
         "creditorIBAN": ,
