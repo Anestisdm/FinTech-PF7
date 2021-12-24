@@ -12,7 +12,14 @@ This is a simplified technical system that accepts payment requests, directly to
 ### 2 - Who can use this system?  
 This system can be used by people that have an account on the Advanced Bank Central, or ABC. All transactions, either payments on account or payments through digital e-wallet, can be only between accounts of ABC.
 
-### 3 - How it works?
+### 3 - Technologies used  
+* Java
+* Spring Framework
+* RabbitMQ
+* Docker
+* Postman
+
+### 4 - How it works?
 
 **Workstations Specifications**
 - Windows 10 or Linux or MacOS, 64 bit
