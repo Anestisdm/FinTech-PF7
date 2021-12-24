@@ -21,7 +21,7 @@ This system can be used by people that have an account on the Advanced Bank Cent
 
 ### 4 - How it works?
 
-**Workstations Specifications**
+**Workstation Specifications**
 - Windows 10 or Linux or MacOS, 64 bit
 - RAM, 8GB required, 16GB preferable
 - 128 GB Storage (SSD would be preferrable)
