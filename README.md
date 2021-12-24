@@ -4,8 +4,6 @@
 </p>
 
 ---
-<br/>
-
 # Digital Wallet
 
 ### 1 - What is this?
