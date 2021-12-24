@@ -1,5 +1,6 @@
+---
 <img src="https://user-images.githubusercontent.com/72802400/147275444-8cb56c06-df1d-45cf-ac0f-3979f0c866f4.png" width="400" height="75"><img src="https://user-images.githubusercontent.com/72802400/147275465-1f5697db-9a94-41ce-ae6b-adb3ba692b73.png" width="300" height="75">
-
+---
 # Digital Wallet
 
 1 - What is this?
@@ -49,3 +50,5 @@ For a payment through a digital e-wallet the user must provide the following:
 
 5 - User support?
 	For help or referring an issue, you can contact with the development team at these e-mails: adimou@athtech.gr and pvavalos@athtech.gr.
+	
+---
