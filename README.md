@@ -28,7 +28,6 @@ This system can be used by people that have an account on the Advanced Bank Cent
 - 4 Core CPU
 
 **Steps to run the application**
-
 1. Install and set up docker
 2. Run the following command from CMD "docker container run -p 15672:15672 -p 5672:5672 -d rabbitmq:3-management"
 3. Install Postman
